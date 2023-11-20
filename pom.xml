@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>guru.springframework</groupId>
+    <groupId>tau.springframework</groupId>
     <artifactId>tdd-by-example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -13,19 +13,16 @@
     <description>Test Driven Development By Example</description>
 
     <organization>
-        <name>Spring Framework Guru</name>
-        <url>https://springframework.guru/</url>
+        <name>tau</name>
     </organization>
 
     <developers>
         <developer>
-            <id>jt</id>
-            <name>John Thompson</name>
-            <email>john@springframework.guru</email>
+            <id>tau</id>
         </developer>
     </developers>
 
-    <inceptionYear>2018</inceptionYear>
+    <inceptionYear>2023</inceptionYear>
 
     <licenses>
         <license>
@@ -69,21 +66,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
-                <configuration>
-                    <argLine>
-                        --illegal-access=permit
-                    </argLine>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
-                <configuration>
-                    <argLine>
-                        --illegal-access=permit
-                    </argLine>
-                </configuration>
             </plugin>
         </plugins>
     </build>
