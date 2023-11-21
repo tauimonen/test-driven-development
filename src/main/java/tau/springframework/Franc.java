@@ -1,10 +1,10 @@
 package tau.springframework;
 
-public class Dollar extends Money {
+public class Franc extends Money {
 
     private String currency;
 
-    public Dollar(int amount, String currency) {
+    public Franc(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -15,8 +15,6 @@ public class Dollar extends Money {
     }
 
     public Money times(int multiplier) {
-        return Money.dollar(amount * multiplier);
+        return Money.franc(amount * multiplier);
     }
-
-
 }
